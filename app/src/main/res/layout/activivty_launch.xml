@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/launch_screen_background_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/launch_screen_background"
+        android:src="@drawable/launch_screen_background"/>
+
+    <ImageView
+        android:id="@+id/logoCircle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logoBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_circle"
+        tools:srcCompat="@drawable/logo_circle" />
+
+    <ImageView
+        android:id="@+id/logoPan"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/logoCircle"
+        app:layout_constraintEnd_toEndOf="@+id/logoCircle"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/logoCircle"
+        app:layout_constraintTop_toTopOf="@+id/logoCircle"
+        app:layout_constraintVertical_bias="0.125"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoCircle"
+        app:layout_constraintEnd_toEndOf="@+id/logoCircle"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/logoCircle"
+        app:layout_constraintTop_toBottomOf="@+id/logoPan"
+        app:layout_constraintVertical_bias="0.078" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
