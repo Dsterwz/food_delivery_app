@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#2AC01D</color>
+    <color name="round_button_color">#D3D3D3</color>
+    <color name="round_gradient_button_start_color">#DC2424</color>
+    <color name="round_gradient_button_end_color">#4A569D</color>
 </resources>

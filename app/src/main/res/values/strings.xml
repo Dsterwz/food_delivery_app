@@ -5,5 +5,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="launch_screen_background_description">Launch screen background</string>
     <string name="on_boarding_screen_image">Fat nigger in unicorn outfit on fricking scooter</string>
-    <string name="on_boarding_screen_text">Fastest Delivery\n 24/7</string>
+    <string name="on_boarding_screen1_text">Fastest Delivery\n 24/7</string>
+    <string name="on_boarding_screen2_text">Welcome To WSR Food</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

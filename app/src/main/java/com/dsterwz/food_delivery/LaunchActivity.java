@@ -33,7 +33,7 @@ public class LaunchActivity extends Activity {
         textLogo = findViewById(R.id.logoText);
         logoPan = findViewById(R.id.logoPan);
         logoAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.logo_anim);
-        face_lobster2 = Typeface.createFromAsset(this.getAssets(), "fonts/LobsterTwo-Regular.ttf");
+        face_lobster2 = Typeface.createFromAsset(this.getAssets(), "font/LobsterTwo-Regular.ttf");
         textLogo.setTypeface(face_lobster2);
         logoPan.startAnimation(logoAnim);
     }
@@ -48,7 +48,7 @@ public class LaunchActivity extends Activity {
                     e.printStackTrace();
                 }
 
-                Intent i = new Intent(LaunchActivity.this,OnBoardingActivity.class);
+                Intent i = new Intent(LaunchActivity.this, OnBoardingFragment2.class);
                 startActivity(i);
             }
         }).start();
