@@ -10,16 +10,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LaunchActivity extends Activity {
-    private Animation logoAnim;
-    private ImageView logoPan;
-    private Typeface face_lobster2;
-    private TextView textLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activivty_launch);
-        init();
         startMainActivity();
     }
 
@@ -29,14 +24,6 @@ public class LaunchActivity extends Activity {
         finish();
     }
 
-    private void init() {
-        textLogo = findViewById(R.id.logoText);
-        logoPan = findViewById(R.id.logoPan);
-        logoAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.logo_anim);
-        face_lobster2 = Typeface.createFromAsset(this.getAssets(), "font/LobsterTwo-Regular.ttf");
-        textLogo.setTypeface(face_lobster2);
-        logoPan.startAnimation(logoAnim);
-    }
 
     private void startMainActivity () {
         new Thread(new Runnable() {
@@ -48,7 +35,7 @@ public class LaunchActivity extends Activity {
                     e.printStackTrace();
                 }
 
-                Intent i = new Intent(LaunchActivity.this, OnBoardingFragment2.class);
+                Intent i = new Intent(LaunchActivity.this, OnBoardingActivity.class);
                 startActivity(i);
             }
         }).start();

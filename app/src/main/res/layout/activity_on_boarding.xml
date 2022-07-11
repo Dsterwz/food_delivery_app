@@ -6,17 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".OnBoardingActivity">
 
-    <ScrollView
-        android:id="@+id/content"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerOnBoarding"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent" />
 
-        <TextView style="?android:textAppearanceMedium"
-            android:padding="16dp"
-            android:lineSpacingMultiplier="1.2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_in" />
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

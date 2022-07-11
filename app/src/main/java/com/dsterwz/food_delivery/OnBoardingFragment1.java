@@ -44,6 +44,6 @@ public class OnBoardingFragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return (ViewGroup) inflater.inflate(
-                R.layout.activity_on_boarding, container, false);
+                R.layout.fragment_on_boarding1, container, false);
     }
 }
